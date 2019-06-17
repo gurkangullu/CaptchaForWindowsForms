@@ -1,5 +1,7 @@
 # Captcha For Windows Forms
 
+![GitHub](https://img.shields.io/github/license/gurkangullu/Captcha-For-Windows-Forms.svg)   ![GitHub repo size](https://img.shields.io/github/repo-size/gurkangullu/Captcha-For-Windows-Forms.svg)
+
 ## Description:
 This program allows you to use and customize Captcha protection for your desktop applications.
 
