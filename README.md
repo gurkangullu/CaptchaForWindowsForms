@@ -7,6 +7,11 @@ If you want to use this program in your own project, you can download the dll fi
 
 Please don't forget to share your requests and suggestions with me. :heart:
 
+## Table of Contents 
+- [Features](#features)
+- [Screenshots](#screenshots-how-to-use-program)
+- [License](#license)
+
 ## Features:
 - You can customize the content of the Captcha image. These customizations:
 	- Numbers
@@ -20,7 +25,7 @@ Please don't forget to share your requests and suggestions with me. :heart:
 - You can save the Captcha image on the computer.
 - You can enter text for captcha picture and check the equality of text and picture.
 
-## Screenshot(s): (How to use program?)
+## Screenshots: (How to use program?)
 <kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
 
 ## License:
