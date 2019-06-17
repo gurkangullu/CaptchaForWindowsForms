@@ -5,6 +5,8 @@ This program allows you to use and customize Captcha protection for your desktop
 
 If you want to use this program in your own project, you can download the dll file included in the project, add it to your project and use all the features. :blush:
 
+Please don't forget to share your requests and suggestions with me. :heart:
+
 ## Features:
 - You can customize the content of the Captcha image. These customizations:
 	- Numbers
