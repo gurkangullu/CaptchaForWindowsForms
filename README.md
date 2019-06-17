@@ -7,7 +7,7 @@ If you want to use this program in your own project, you can download the dll fi
 
 Please don't forget to share your requests and suggestions with me. :heart:
 
-## Table of Contents 
+## Table of Contents:
 - [Features](#features)
 - [Screenshots](#screenshots-how-to-use-program)
 - [License](#license)
