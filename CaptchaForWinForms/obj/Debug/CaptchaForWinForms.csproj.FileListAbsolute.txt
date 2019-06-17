@@ -1,0 +1,30 @@
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe.config
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.MainForm.resources
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.Properties.Resources.resources
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.GenerateResource.cache
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe.config
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.MainForm.resources
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.Properties.Resources.resources
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.GenerateResource.cache
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\CaptchaForWinForms1\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe.config
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\bin\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.MainForm.resources
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.Properties.Resources.resources
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.exe
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.pdb
+C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.AboutForm.resources
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csprojAssemblyReference.cache
+C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.AboutForm.resources
