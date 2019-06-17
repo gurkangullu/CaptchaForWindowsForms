@@ -18,9 +18,8 @@ If you want to use this program in your own project, you can download the dll fi
 - You can save the Captcha image on the computer.
 - You can enter text for captcha picture and check the equality of text and picture.
 
-
 ## Screenshot(s): (How to use program?)
-<kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
+<kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
 
 ## Licence:
 This project is licensed under the MIT License. See the [LICENSE](../master/LICENSE) file for details.
