@@ -23,7 +23,7 @@ Please don't forget to share your requests and suggestions with me. :heart:
 ## Screenshot(s): (How to use program?)
 <kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
 
-## Licence:
+## License:
 This project is licensed under the MIT License. See the [LICENSE](../master/LICENSE) file for details.
 
 Created by Gürkan Güllü.
