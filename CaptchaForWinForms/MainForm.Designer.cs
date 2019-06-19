@@ -39,14 +39,30 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.GroupBoxPref = new System.Windows.Forms.GroupBox();
+            this.NumTextLength = new System.Windows.Forms.NumericUpDown();
             this.CBoxSymbol = new System.Windows.Forms.CheckBox();
-            this.CBoxLine = new System.Windows.Forms.CheckBox();
-            this.CBoxNoise = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.CBoxUpCaseChar = new System.Windows.Forms.CheckBox();
             this.CBoxLowCaseChar = new System.Windows.Forms.CheckBox();
             this.CBoxNumeric = new System.Windows.Forms.CheckBox();
             this.BtnAbout = new System.Windows.Forms.Button();
+            this.RBtnNormCaptcha = new System.Windows.Forms.RadioButton();
+            this.RBtnMathCaptcha = new System.Windows.Forms.RadioButton();
+            this.GBoxNorm = new System.Windows.Forms.GroupBox();
+            this.GBoxMath = new System.Windows.Forms.GroupBox();
+            this.CBoxAdd = new System.Windows.Forms.CheckBox();
+            this.CBoxSubt = new System.Windows.Forms.CheckBox();
+            this.CBoxDiv = new System.Windows.Forms.CheckBox();
+            this.CBoxMultp = new System.Windows.Forms.CheckBox();
+            this.CBoxMessy = new System.Windows.Forms.CheckBox();
+            this.CBoxNoise = new System.Windows.Forms.CheckBox();
+            this.CBoxLine = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.GroupBoxPref.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).BeginInit();
+            this.GBoxNorm.SuspendLayout();
+            this.GBoxMath.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelCaptcha
@@ -59,7 +75,7 @@
             // 
             // BtnCheck
             // 
-            this.BtnCheck.Location = new System.Drawing.Point(218, 104);
+            this.BtnCheck.Location = new System.Drawing.Point(12, 133);
             this.BtnCheck.Name = "BtnCheck";
             this.BtnCheck.Size = new System.Drawing.Size(52, 23);
             this.BtnCheck.TabIndex = 1;
@@ -84,7 +100,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(470, 13);
+            this.label1.Location = new System.Drawing.Point(9, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 16);
             this.label1.TabIndex = 3;
@@ -94,7 +110,7 @@
             // 
             this.LblStatus.AutoSize = true;
             this.LblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblStatus.Location = new System.Drawing.Point(470, 32);
+            this.LblStatus.Location = new System.Drawing.Point(9, 194);
             this.LblStatus.Name = "LblStatus";
             this.LblStatus.Size = new System.Drawing.Size(0, 16);
             this.LblStatus.TabIndex = 4;
@@ -104,7 +120,7 @@
             this.TxtCheckText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.TxtCheckText.Location = new System.Drawing.Point(12, 104);
             this.TxtCheckText.Name = "TxtCheckText";
-            this.TxtCheckText.Size = new System.Drawing.Size(200, 23);
+            this.TxtCheckText.Size = new System.Drawing.Size(228, 23);
             this.TxtCheckText.TabIndex = 5;
             // 
             // BtnListen
@@ -122,7 +138,7 @@
             // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(276, 104);
+            this.BtnSave.Location = new System.Drawing.Point(70, 133);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(52, 23);
             this.BtnSave.TabIndex = 7;
@@ -135,30 +151,43 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.Size = new System.Drawing.Size(203, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Enter captcha text:";
+            this.label2.Text = "Enter captcha text or math problem result:";
             // 
             // GroupBoxPref
             // 
-            this.GroupBoxPref.Controls.Add(this.CBoxSymbol);
-            this.GroupBoxPref.Controls.Add(this.CBoxLine);
-            this.GroupBoxPref.Controls.Add(this.CBoxNoise);
-            this.GroupBoxPref.Controls.Add(this.CBoxUpCaseChar);
-            this.GroupBoxPref.Controls.Add(this.CBoxLowCaseChar);
-            this.GroupBoxPref.Controls.Add(this.CBoxNumeric);
+            this.GroupBoxPref.Controls.Add(this.groupBox3);
+            this.GroupBoxPref.Controls.Add(this.GBoxMath);
+            this.GroupBoxPref.Controls.Add(this.GBoxNorm);
+            this.GroupBoxPref.Controls.Add(this.RBtnMathCaptcha);
+            this.GroupBoxPref.Controls.Add(this.RBtnNormCaptcha);
             this.GroupBoxPref.Location = new System.Drawing.Point(255, 9);
             this.GroupBoxPref.Name = "GroupBoxPref";
-            this.GroupBoxPref.Size = new System.Drawing.Size(200, 89);
+            this.GroupBoxPref.Size = new System.Drawing.Size(320, 250);
             this.GroupBoxPref.TabIndex = 9;
             this.GroupBoxPref.TabStop = false;
             this.GroupBoxPref.Text = "Preferences";
             // 
+            // NumTextLength
+            // 
+            this.NumTextLength.Location = new System.Drawing.Point(9, 32);
+            this.NumTextLength.Name = "NumTextLength";
+            this.NumTextLength.Size = new System.Drawing.Size(64, 20);
+            this.NumTextLength.TabIndex = 11;
+            this.NumTextLength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.NumTextLength.ValueChanged += new System.EventHandler(this.NumTextLength_ValueChanged);
+            // 
             // CBoxSymbol
             // 
             this.CBoxSymbol.AutoSize = true;
-            this.CBoxSymbol.Enabled = false;
-            this.CBoxSymbol.Location = new System.Drawing.Point(119, 15);
+            this.CBoxSymbol.Checked = true;
+            this.CBoxSymbol.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxSymbol.Location = new System.Drawing.Point(79, 85);
             this.CBoxSymbol.Name = "CBoxSymbol";
             this.CBoxSymbol.Size = new System.Drawing.Size(60, 17);
             this.CBoxSymbol.TabIndex = 5;
@@ -166,36 +195,21 @@
             this.CBoxSymbol.Text = "Symbol";
             this.CBoxSymbol.UseVisualStyleBackColor = true;
             // 
-            // CBoxLine
+            // label3
             // 
-            this.CBoxLine.AutoSize = true;
-            this.CBoxLine.Checked = true;
-            this.CBoxLine.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxLine.Location = new System.Drawing.Point(119, 38);
-            this.CBoxLine.Name = "CBoxLine";
-            this.CBoxLine.Size = new System.Drawing.Size(46, 17);
-            this.CBoxLine.TabIndex = 4;
-            this.CBoxLine.Text = "Line";
-            this.CBoxLine.UseVisualStyleBackColor = true;
-            // 
-            // CBoxNoise
-            // 
-            this.CBoxNoise.AutoSize = true;
-            this.CBoxNoise.Checked = true;
-            this.CBoxNoise.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxNoise.Location = new System.Drawing.Point(119, 61);
-            this.CBoxNoise.Name = "CBoxNoise";
-            this.CBoxNoise.Size = new System.Drawing.Size(53, 17);
-            this.CBoxNoise.TabIndex = 3;
-            this.CBoxNoise.Text = "Noise";
-            this.CBoxNoise.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Text length:";
             // 
             // CBoxUpCaseChar
             // 
             this.CBoxUpCaseChar.AutoSize = true;
             this.CBoxUpCaseChar.Checked = true;
             this.CBoxUpCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxUpCaseChar.Location = new System.Drawing.Point(6, 61);
+            this.CBoxUpCaseChar.Location = new System.Drawing.Point(79, 62);
             this.CBoxUpCaseChar.Name = "CBoxUpCaseChar";
             this.CBoxUpCaseChar.Size = new System.Drawing.Size(107, 17);
             this.CBoxUpCaseChar.TabIndex = 2;
@@ -208,7 +222,7 @@
             this.CBoxLowCaseChar.AutoSize = true;
             this.CBoxLowCaseChar.Checked = true;
             this.CBoxLowCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxLowCaseChar.Location = new System.Drawing.Point(6, 38);
+            this.CBoxLowCaseChar.Location = new System.Drawing.Point(79, 39);
             this.CBoxLowCaseChar.Name = "CBoxLowCaseChar";
             this.CBoxLowCaseChar.Size = new System.Drawing.Size(107, 17);
             this.CBoxLowCaseChar.TabIndex = 1;
@@ -221,7 +235,7 @@
             this.CBoxNumeric.AutoSize = true;
             this.CBoxNumeric.Checked = true;
             this.CBoxNumeric.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxNumeric.Location = new System.Drawing.Point(6, 15);
+            this.CBoxNumeric.Location = new System.Drawing.Point(79, 16);
             this.CBoxNumeric.Name = "CBoxNumeric";
             this.CBoxNumeric.Size = new System.Drawing.Size(65, 17);
             this.CBoxNumeric.TabIndex = 0;
@@ -232,18 +246,170 @@
             // BtnAbout
             // 
             this.BtnAbout.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbout.Image")));
-            this.BtnAbout.Location = new System.Drawing.Point(577, 2);
+            this.BtnAbout.Location = new System.Drawing.Point(581, 12);
             this.BtnAbout.Name = "BtnAbout";
             this.BtnAbout.Size = new System.Drawing.Size(34, 23);
             this.BtnAbout.TabIndex = 10;
             this.BtnAbout.UseVisualStyleBackColor = true;
             this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
             // 
+            // RBtnNormCaptcha
+            // 
+            this.RBtnNormCaptcha.AutoSize = true;
+            this.RBtnNormCaptcha.Checked = true;
+            this.RBtnNormCaptcha.Location = new System.Drawing.Point(6, 19);
+            this.RBtnNormCaptcha.Name = "RBtnNormCaptcha";
+            this.RBtnNormCaptcha.Size = new System.Drawing.Size(101, 17);
+            this.RBtnNormCaptcha.TabIndex = 13;
+            this.RBtnNormCaptcha.TabStop = true;
+            this.RBtnNormCaptcha.Tag = "Normal";
+            this.RBtnNormCaptcha.Text = "Normal Captcha";
+            this.RBtnNormCaptcha.UseVisualStyleBackColor = true;
+            // 
+            // RBtnMathCaptcha
+            // 
+            this.RBtnMathCaptcha.AutoSize = true;
+            this.RBtnMathCaptcha.Location = new System.Drawing.Point(6, 153);
+            this.RBtnMathCaptcha.Name = "RBtnMathCaptcha";
+            this.RBtnMathCaptcha.Size = new System.Drawing.Size(92, 17);
+            this.RBtnMathCaptcha.TabIndex = 14;
+            this.RBtnMathCaptcha.Tag = "Math";
+            this.RBtnMathCaptcha.Text = "Math Captcha";
+            this.RBtnMathCaptcha.UseVisualStyleBackColor = true;
+            // 
+            // GBoxNorm
+            // 
+            this.GBoxNorm.Controls.Add(this.label3);
+            this.GBoxNorm.Controls.Add(this.CBoxNumeric);
+            this.GBoxNorm.Controls.Add(this.CBoxLowCaseChar);
+            this.GBoxNorm.Controls.Add(this.CBoxSymbol);
+            this.GBoxNorm.Controls.Add(this.NumTextLength);
+            this.GBoxNorm.Controls.Add(this.CBoxUpCaseChar);
+            this.GBoxNorm.Location = new System.Drawing.Point(6, 42);
+            this.GBoxNorm.Name = "GBoxNorm";
+            this.GBoxNorm.Size = new System.Drawing.Size(187, 105);
+            this.GBoxNorm.TabIndex = 11;
+            this.GBoxNorm.TabStop = false;
+            this.GBoxNorm.Text = "Normal Captcha Pref.";
+            // 
+            // GBoxMath
+            // 
+            this.GBoxMath.Controls.Add(this.CBoxAdd);
+            this.GBoxMath.Controls.Add(this.CBoxSubt);
+            this.GBoxMath.Controls.Add(this.CBoxDiv);
+            this.GBoxMath.Controls.Add(this.CBoxMultp);
+            this.GBoxMath.Location = new System.Drawing.Point(6, 176);
+            this.GBoxMath.Name = "GBoxMath";
+            this.GBoxMath.Size = new System.Drawing.Size(187, 66);
+            this.GBoxMath.TabIndex = 15;
+            this.GBoxMath.TabStop = false;
+            this.GBoxMath.Text = "Math Captcha Pref.";
+            // 
+            // CBoxAdd
+            // 
+            this.CBoxAdd.AutoSize = true;
+            this.CBoxAdd.Checked = true;
+            this.CBoxAdd.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxAdd.Location = new System.Drawing.Point(9, 19);
+            this.CBoxAdd.Name = "CBoxAdd";
+            this.CBoxAdd.Size = new System.Drawing.Size(64, 17);
+            this.CBoxAdd.TabIndex = 0;
+            this.CBoxAdd.Tag = "0";
+            this.CBoxAdd.Text = "Addition";
+            this.CBoxAdd.UseVisualStyleBackColor = true;
+            // 
+            // CBoxSubt
+            // 
+            this.CBoxSubt.AutoSize = true;
+            this.CBoxSubt.Checked = true;
+            this.CBoxSubt.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxSubt.Location = new System.Drawing.Point(9, 42);
+            this.CBoxSubt.Name = "CBoxSubt";
+            this.CBoxSubt.Size = new System.Drawing.Size(69, 17);
+            this.CBoxSubt.TabIndex = 1;
+            this.CBoxSubt.Tag = "1";
+            this.CBoxSubt.Text = "Subtract ";
+            this.CBoxSubt.UseVisualStyleBackColor = true;
+            // 
+            // CBoxDiv
+            // 
+            this.CBoxDiv.AutoSize = true;
+            this.CBoxDiv.Checked = true;
+            this.CBoxDiv.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxDiv.Location = new System.Drawing.Point(79, 42);
+            this.CBoxDiv.Name = "CBoxDiv";
+            this.CBoxDiv.Size = new System.Drawing.Size(56, 17);
+            this.CBoxDiv.TabIndex = 5;
+            this.CBoxDiv.Tag = "3";
+            this.CBoxDiv.Text = "Divide";
+            this.CBoxDiv.UseVisualStyleBackColor = true;
+            // 
+            // CBoxMultp
+            // 
+            this.CBoxMultp.AutoSize = true;
+            this.CBoxMultp.Checked = true;
+            this.CBoxMultp.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxMultp.Location = new System.Drawing.Point(79, 19);
+            this.CBoxMultp.Name = "CBoxMultp";
+            this.CBoxMultp.Size = new System.Drawing.Size(64, 17);
+            this.CBoxMultp.TabIndex = 2;
+            this.CBoxMultp.Tag = "2";
+            this.CBoxMultp.Text = "Multiply ";
+            this.CBoxMultp.UseVisualStyleBackColor = true;
+            // 
+            // CBoxMessy
+            // 
+            this.CBoxMessy.AutoSize = true;
+            this.CBoxMessy.Checked = true;
+            this.CBoxMessy.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxMessy.Location = new System.Drawing.Point(6, 65);
+            this.CBoxMessy.Name = "CBoxMessy";
+            this.CBoxMessy.Size = new System.Drawing.Size(80, 17);
+            this.CBoxMessy.TabIndex = 6;
+            this.CBoxMessy.Text = "Messy Text";
+            this.CBoxMessy.UseVisualStyleBackColor = true;
+            // 
+            // CBoxNoise
+            // 
+            this.CBoxNoise.AutoSize = true;
+            this.CBoxNoise.Checked = true;
+            this.CBoxNoise.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxNoise.Location = new System.Drawing.Point(6, 42);
+            this.CBoxNoise.Name = "CBoxNoise";
+            this.CBoxNoise.Size = new System.Drawing.Size(53, 17);
+            this.CBoxNoise.TabIndex = 3;
+            this.CBoxNoise.Text = "Noise";
+            this.CBoxNoise.UseVisualStyleBackColor = true;
+            // 
+            // CBoxLine
+            // 
+            this.CBoxLine.AutoSize = true;
+            this.CBoxLine.Checked = true;
+            this.CBoxLine.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxLine.Location = new System.Drawing.Point(6, 19);
+            this.CBoxLine.Name = "CBoxLine";
+            this.CBoxLine.Size = new System.Drawing.Size(46, 17);
+            this.CBoxLine.TabIndex = 4;
+            this.CBoxLine.Text = "Line";
+            this.CBoxLine.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.CBoxLine);
+            this.groupBox3.Controls.Add(this.CBoxMessy);
+            this.groupBox3.Controls.Add(this.CBoxNoise);
+            this.groupBox3.Location = new System.Drawing.Point(199, 42);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(113, 200);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "General Pref.";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 139);
+            this.ClientSize = new System.Drawing.Size(620, 265);
             this.Controls.Add(this.BtnAbout);
             this.Controls.Add(this.GroupBoxPref);
             this.Controls.Add(this.label2);
@@ -263,6 +429,13 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.GroupBoxPref.ResumeLayout(false);
             this.GroupBoxPref.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).EndInit();
+            this.GBoxNorm.ResumeLayout(false);
+            this.GBoxNorm.PerformLayout();
+            this.GBoxMath.ResumeLayout(false);
+            this.GBoxMath.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,9 +457,21 @@
         private System.Windows.Forms.CheckBox CBoxLowCaseChar;
         private System.Windows.Forms.CheckBox CBoxNumeric;
         private System.Windows.Forms.CheckBox CBoxSymbol;
+        private System.Windows.Forms.Button BtnAbout;
+        private System.Windows.Forms.NumericUpDown NumTextLength;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox GBoxMath;
+        private System.Windows.Forms.CheckBox CBoxAdd;
+        private System.Windows.Forms.CheckBox CBoxSubt;
+        private System.Windows.Forms.CheckBox CBoxDiv;
+        private System.Windows.Forms.CheckBox CBoxMultp;
+        private System.Windows.Forms.GroupBox GBoxNorm;
+        private System.Windows.Forms.RadioButton RBtnMathCaptcha;
+        private System.Windows.Forms.RadioButton RBtnNormCaptcha;
         private System.Windows.Forms.CheckBox CBoxLine;
         private System.Windows.Forms.CheckBox CBoxNoise;
-        private System.Windows.Forms.Button BtnAbout;
+        private System.Windows.Forms.CheckBox CBoxMessy;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

@@ -1,7 +1,5 @@
 # Captcha For Windows Forms
 
-![GitHub](https://img.shields.io/github/license/gurkangullu/Captcha-For-Windows-Forms.svg)   ![GitHub repo size](https://img.shields.io/github/repo-size/gurkangullu/Captcha-For-Windows-Forms.svg)
-
 ## Description:
 This program allows you to use and customize Captcha protection for your desktop applications.
 
@@ -9,26 +7,33 @@ If you want to use this program in your own project, you can download the dll fi
 
 Please don't forget to share your requests and suggestions with me. :heart:
 
-## Table of Contents:
-- [Features](#features)
-- [Screenshots](#screenshots-how-to-use-program)
-- [License](#license)
-
 ## Features:
 - You can customize the content of the Captcha image. These customizations:
-	- Numbers
-	- Lower Case Characters
-	- Upper Case Characters
-	- Symbols (Coming Soon..!)
-	- Different Lines on captcha image. (For more security.)
-	- Different Noises on captcha image. (For more security.)
+	- For normal captcha customizations:
+		- Customize the text length of the text in the captcha image.
+		- Numbers.
+		- Lower Case Characters.
+		- Upper Case Characters.
+		- Symbols. (NEW!)
+
+	- For math captcha customizations: (NEW FEATURES!!)
+		- Addition Problems.
+		- Substract Problems.
+		- Multiply Problems.
+		- Divide Problems.
+
+	- For general captcha customizations:
+		- Different Lines on captcha image. (For more security.)
+		- Different Noises on captcha image. (For more security.)
+		- Messy texts on captcha image. (For more security.) (NEW!)
+
 - If you can't pass the Captcha image, you can change the image.
 - If you can't read or see Captcha image, you can listen text on the image.
-- You can save the Captcha image on the computer.
+- You can save the captcha image on the computer and change the image type. (e.g: Png, Jpeg, Icon...)
 - You can enter text for captcha picture and check the equality of text and picture.
 
-## Screenshots: (How to use program?)
-<kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
+## Screenshot(s): (How to use program?)
+<kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
 
 ## License:
 This project is licensed under the MIT License. See the [LICENSE](../master/LICENSE) file for details.
