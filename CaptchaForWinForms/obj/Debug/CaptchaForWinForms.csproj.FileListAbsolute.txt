@@ -26,5 +26,4 @@ C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\D
 C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.exe
 C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.pdb
 C:\Users\User\Desktop\Captcha Projem\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.AboutForm.resources
-C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.csprojAssemblyReference.cache
 C:\Users\User\Desktop\CaptchaForWinForms\CaptchaForWinForms\obj\Debug\CaptchaForWinForms.AboutForm.resources
