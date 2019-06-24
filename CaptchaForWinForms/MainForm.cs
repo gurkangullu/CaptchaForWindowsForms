@@ -27,6 +27,7 @@ namespace CaptchaForWinForms
             CBoxLine.CheckedChanged += CBoxs_CheckedChanged;
             CBoxNoise.CheckedChanged += CBoxs_CheckedChanged;
             CBoxMessy.CheckedChanged += CBoxs_CheckedChanged;
+            CBoxDistImg.CheckedChanged += CBoxs_CheckedChanged;
 
             //Setting checked change events of the radio buttons.
             RBtnNormCaptcha.CheckedChanged += RBtns_CheckedChanged;
@@ -51,7 +52,7 @@ namespace CaptchaForWinForms
              * was set necessary parameters.*/
             cp = new WinFormCaptcha(int.Parse(NumTextLength.Value.ToString()),
                 PanelCaptcha.Width, PanelCaptcha.Height,
-                true, true, true, true, true, true, true);
+                true, true, true, true, true, true, true, true);
 
             //Captcha image was created and was set as background image of the panel's.
             PanelCaptcha.BackgroundImage = cp.DrawCaptcha();
@@ -126,13 +127,13 @@ namespace CaptchaForWinForms
             {
                 cp.ChangeNormCaptchaSettings(CBoxNumeric.Checked, CBoxLowCaseChar.Checked,
                     CBoxUpCaseChar.Checked, CBoxSymbol.Checked, CBoxLine.Checked,
-                    CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
             }
             else if (RBtnMathCaptcha.Checked)
             {
                 cp.ChangeMathCaptchaSettings(CBoxAdd.Checked, CBoxSubt.Checked,
                     CBoxMultp.Checked, CBoxDiv.Checked, CBoxLine.Checked,
-                    CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
             }
         }
 
@@ -158,21 +159,21 @@ namespace CaptchaForWinForms
                 cp = new WinFormCaptcha(int.Parse(NumTextLength.Value.ToString()),
                     PanelCaptcha.Width, PanelCaptcha.Height, CBoxNumeric.Checked,
                     CBoxLowCaseChar.Checked, CBoxUpCaseChar.Checked, CBoxSymbol.Checked,
-                    CBoxLine.Checked, CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxLine.Checked, CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
 
                 cp.ChangeNormCaptchaSettings(CBoxNumeric.Checked, CBoxLowCaseChar.Checked,
                     CBoxUpCaseChar.Checked, CBoxSymbol.Checked, CBoxLine.Checked,
-                    CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
             }
             else if (RBtnMathCaptcha.Checked)
             {
                 cp.ChangeMathCaptchaSettings(CBoxAdd.Checked, CBoxSubt.Checked,
                     CBoxMultp.Checked, CBoxDiv.Checked, CBoxLine.Checked,
-                    CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
 
                 cp = new WinFormCaptcha(PanelCaptcha.Width, PanelCaptcha.Height, CBoxAdd.Checked,
                     CBoxSubt.Checked, CBoxMultp.Checked, CBoxDiv.Checked, CBoxLine.Checked,
-                    CBoxNoise.Checked, CBoxMessy.Checked);
+                    CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
             }
         }
 

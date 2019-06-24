@@ -67,6 +67,14 @@ namespace CaptchaForWinForms
         public bool IsIncludeUpperCaseChar { get; set; } = true;
         public bool IsIncludeSymbol { get; set; } = true;
 
+        public struct NormalCaptchaProperties
+        {
+            public bool IsIncludeNumeric;
+            public bool IsIncludeLowerCaseChar;
+            public bool IsIncludeUpperCaseChar;
+            public bool IsIncludeSymbol;
+        }
+
         //Math captcha's properties.
         public bool IsIncludeMathAddition { get; set; } = true;
         public bool IsIncludeMathSubstract { get; set; } = true;
@@ -77,6 +85,7 @@ namespace CaptchaForWinForms
         public bool IsIncludeLineOnCaptcha { get; set; } = true;
         public bool IsIncludeNoiseOnCaptcha { get; set; } = true;
         public bool IsMessyText { get; set; } = true;
+        public bool IsDistortImage { get; set; } = true;
 
         public CaptchaStyles CaptchaStyle { get; set; }
         #endregion
@@ -107,11 +116,14 @@ namespace CaptchaForWinForms
         /// <param name="_isMessyText">
         /// Checks that the captcha contains messy texts.
         /// </param>
+        /// <param name="_isDistortImage">
+        /// Checks that the captcha distort.
+        /// </param>
         public WinFormCaptcha(int _textLenght, int _width, int _height,
             bool _isIncludeNumeric, bool _isIncludeLowerCaseChar,
             bool _isIncludeUpperCaseChar, bool _isIncludeSymbol,
             bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha,
-            bool _isMessyText)
+            bool _isMessyText, bool _isDistortImage)
         {
             rnd = new Random();
             CaptchaStyle = CaptchaStyles.Normal;
@@ -123,7 +135,7 @@ namespace CaptchaForWinForms
 
             ChangeNormCaptchaSettings(_isIncludeNumeric, _isIncludeLowerCaseChar,
                 _isIncludeUpperCaseChar, _isIncludeSymbol, _isIncludeLineOnCaptcha,
-                _isIncludeNoiseOnCaptcha, _isMessyText);
+                _isIncludeNoiseOnCaptcha, _isMessyText, _isDistortImage);
 
             bmSz = new Size(Width, Height);
             txtSz = new Size(Width, Height);
@@ -163,9 +175,13 @@ namespace CaptchaForWinForms
         /// <param name="_isMessyText">
         /// Checks that the captcha contains messy texts.
         /// </param>
+        /// <param name="_isDistortImage">
+        /// Checks that the captcha distort.
+        /// </param>
         public WinFormCaptcha(int _width, int _height, bool _isIncludeMathAddition,
             bool _isIncludeMathSubstract, bool _isIncludeMathMultiply, bool _isIncludeMathDivide,
-            bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha, bool _isMessyText)
+            bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha, bool _isMessyText,
+            bool _isDistortImage)
         {
             rnd = new Random();
             CaptchaStyle = CaptchaStyles.Math;
@@ -175,7 +191,8 @@ namespace CaptchaForWinForms
 
             ChangeMathCaptchaSettings(_isIncludeMathAddition, _isIncludeMathSubstract,
                 _isIncludeMathMultiply, _isIncludeMathDivide,
-                _isIncludeLineOnCaptcha, _isIncludeNoiseOnCaptcha, _isMessyText);
+                _isIncludeLineOnCaptcha, _isIncludeNoiseOnCaptcha, _isMessyText,
+                _isDistortImage);
 
             bmSz = new Size(Width, Height);
             txtSz = new Size(Width, Height);
@@ -457,12 +474,45 @@ namespace CaptchaForWinForms
         /// <param name="_isMessyText">
         /// Checks that the captcha contains messy texts.
         /// </param>
+        /// <param name="_isDistortImage">
+        /// Checks that the captcha distort.
+        /// </param>
         private void ChangeGeneralCaptchaSettings(bool _isIncludeLineOnCaptcha,
-            bool _isIncludeNoiseOnCaptcha, bool _isMessyText)
+            bool _isIncludeNoiseOnCaptcha, bool _isMessyText, bool _isDistortImage)
         {
             IsIncludeLineOnCaptcha = _isIncludeLineOnCaptcha;
             IsIncludeNoiseOnCaptcha = _isIncludeNoiseOnCaptcha;
             IsMessyText = _isMessyText;
+            IsDistortImage = _isDistortImage;
+        }
+
+        /// <summary>
+        /// This method allows distort of the captcha image.
+        /// </summary>
+        private void DistortImage()
+        {
+            if (IsDistortImage)
+            {
+                using (var cloneBitmap = (Bitmap)bitmap.Clone())
+                {
+                    int newX = 0, newY = 0, distValue = 4;
+
+                    for (int y = 0; y < bmSz.Height; y++)
+                    {
+                        for (int x = 0; x < bmSz.Width; x++)
+                        {
+                            //Wave effect applying.
+                            newX = (int)(x + (distValue * Math.Sin(Math.PI * y / 70.0)));
+                            newY = (int)(y + (distValue * Math.Cos(Math.PI * x / 50.0)));
+
+                            if (newX < 0 || newX >= bmSz.Width) newX = 0;
+                            if (newY < 0 || newY >= bmSz.Height) newY = 0;
+
+                            bitmap.SetPixel(x, y, cloneBitmap.GetPixel(newX, newY));
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -513,9 +563,10 @@ namespace CaptchaForWinForms
                             //g.DrawString(Text, font, br, txtPt);
                             DrawText(br);
 
-                            //Draw random lines and noises.
+                            //Applying some general captcha settings.
                             DrawRandomLine();
                             DrawRandomNoise();
+                            DistortImage();
 
                             return bitmap;
                         }
@@ -602,9 +653,12 @@ namespace CaptchaForWinForms
         /// <param name="_isMessyText">
         /// Checks that the captcha contains messy texts.
         /// </param>
+        /// <param name="_isDistortImage">
+        /// Checks that the captcha distort.
+        /// </param>
         public void ChangeNormCaptchaSettings(bool _isIncludeNumeric, bool _isIncludeLowerCaseChar,
             bool _isIncludeUpperCaseChar, bool _isIncludeSymbol, bool _isIncludeLineOnCaptcha,
-            bool _isIncludeNoiseOnCaptcha, bool _isMessyText)
+            bool _isIncludeNoiseOnCaptcha, bool _isMessyText, bool _isDistortImage)
         {
             IsIncludeNumeric = _isIncludeNumeric;
             IsIncludeLowerCaseChar = _isIncludeLowerCaseChar;
@@ -612,7 +666,7 @@ namespace CaptchaForWinForms
             IsIncludeSymbol = _isIncludeSymbol;
 
             ChangeGeneralCaptchaSettings(_isIncludeLineOnCaptcha, _isIncludeNoiseOnCaptcha,
-                _isMessyText);
+                _isMessyText, _isDistortImage);
         }
 
         /// <summary>
@@ -639,9 +693,12 @@ namespace CaptchaForWinForms
         /// <param name="_isMessyText">
         /// Checks that the captcha contains messy texts.
         /// </param>
+        /// <param name="_isDistortImage">
+        /// Checks that the captcha distort.
+        /// </param>
         public void ChangeMathCaptchaSettings(bool _isIncludeMathAddition, bool _isIncludeMathSubstract,
             bool _isIncludeMathMultiply, bool _isIncludeMathDivide, bool _isIncludeLineOnCaptcha,
-            bool _isIncludeNoiseOnCaptcha, bool _isMessyText)
+            bool _isIncludeNoiseOnCaptcha, bool _isMessyText, bool _isDistortImage)
         {
             IsIncludeMathAddition = _isIncludeMathAddition;
             IsIncludeMathSubstract = _isIncludeMathSubstract;
@@ -649,7 +706,7 @@ namespace CaptchaForWinForms
             IsIncludeMathDivide = _isIncludeMathDivide;
 
             ChangeGeneralCaptchaSettings(_isIncludeLineOnCaptcha, _isIncludeNoiseOnCaptcha,
-                _isMessyText);
+                _isMessyText, _isDistortImage);
         }
 
         /// <summary>

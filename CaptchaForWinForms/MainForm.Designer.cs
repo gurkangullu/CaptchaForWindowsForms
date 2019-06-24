@@ -39,30 +39,31 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.GroupBoxPref = new System.Windows.Forms.GroupBox();
-            this.NumTextLength = new System.Windows.Forms.NumericUpDown();
-            this.CBoxSymbol = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.CBoxUpCaseChar = new System.Windows.Forms.CheckBox();
-            this.CBoxLowCaseChar = new System.Windows.Forms.CheckBox();
-            this.CBoxNumeric = new System.Windows.Forms.CheckBox();
-            this.BtnAbout = new System.Windows.Forms.Button();
-            this.RBtnNormCaptcha = new System.Windows.Forms.RadioButton();
-            this.RBtnMathCaptcha = new System.Windows.Forms.RadioButton();
-            this.GBoxNorm = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CBoxLine = new System.Windows.Forms.CheckBox();
+            this.CBoxMessy = new System.Windows.Forms.CheckBox();
+            this.CBoxNoise = new System.Windows.Forms.CheckBox();
             this.GBoxMath = new System.Windows.Forms.GroupBox();
             this.CBoxAdd = new System.Windows.Forms.CheckBox();
             this.CBoxSubt = new System.Windows.Forms.CheckBox();
             this.CBoxDiv = new System.Windows.Forms.CheckBox();
             this.CBoxMultp = new System.Windows.Forms.CheckBox();
-            this.CBoxMessy = new System.Windows.Forms.CheckBox();
-            this.CBoxNoise = new System.Windows.Forms.CheckBox();
-            this.CBoxLine = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.GBoxNorm = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CBoxNumeric = new System.Windows.Forms.CheckBox();
+            this.CBoxLowCaseChar = new System.Windows.Forms.CheckBox();
+            this.CBoxSymbol = new System.Windows.Forms.CheckBox();
+            this.NumTextLength = new System.Windows.Forms.NumericUpDown();
+            this.CBoxUpCaseChar = new System.Windows.Forms.CheckBox();
+            this.RBtnMathCaptcha = new System.Windows.Forms.RadioButton();
+            this.RBtnNormCaptcha = new System.Windows.Forms.RadioButton();
+            this.BtnAbout = new System.Windows.Forms.Button();
+            this.CBoxDistImg = new System.Windows.Forms.CheckBox();
             this.GroupBoxPref.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).BeginInit();
-            this.GBoxNorm.SuspendLayout();
-            this.GBoxMath.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.GBoxMath.SuspendLayout();
+            this.GBoxNorm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelCaptcha
@@ -169,128 +170,54 @@
             this.GroupBoxPref.TabStop = false;
             this.GroupBoxPref.Text = "Preferences";
             // 
-            // NumTextLength
+            // groupBox3
             // 
-            this.NumTextLength.Location = new System.Drawing.Point(9, 32);
-            this.NumTextLength.Name = "NumTextLength";
-            this.NumTextLength.Size = new System.Drawing.Size(64, 20);
-            this.NumTextLength.TabIndex = 11;
-            this.NumTextLength.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.NumTextLength.ValueChanged += new System.EventHandler(this.NumTextLength_ValueChanged);
+            this.groupBox3.Controls.Add(this.CBoxDistImg);
+            this.groupBox3.Controls.Add(this.CBoxLine);
+            this.groupBox3.Controls.Add(this.CBoxMessy);
+            this.groupBox3.Controls.Add(this.CBoxNoise);
+            this.groupBox3.Location = new System.Drawing.Point(199, 42);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(113, 200);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "General Pref.";
             // 
-            // CBoxSymbol
+            // CBoxLine
             // 
-            this.CBoxSymbol.AutoSize = true;
-            this.CBoxSymbol.Checked = true;
-            this.CBoxSymbol.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxSymbol.Location = new System.Drawing.Point(79, 85);
-            this.CBoxSymbol.Name = "CBoxSymbol";
-            this.CBoxSymbol.Size = new System.Drawing.Size(60, 17);
-            this.CBoxSymbol.TabIndex = 5;
-            this.CBoxSymbol.Tag = "3";
-            this.CBoxSymbol.Text = "Symbol";
-            this.CBoxSymbol.UseVisualStyleBackColor = true;
+            this.CBoxLine.AutoSize = true;
+            this.CBoxLine.Checked = true;
+            this.CBoxLine.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxLine.Location = new System.Drawing.Point(6, 19);
+            this.CBoxLine.Name = "CBoxLine";
+            this.CBoxLine.Size = new System.Drawing.Size(46, 17);
+            this.CBoxLine.TabIndex = 4;
+            this.CBoxLine.Text = "Line";
+            this.CBoxLine.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // CBoxMessy
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Text length:";
+            this.CBoxMessy.AutoSize = true;
+            this.CBoxMessy.Checked = true;
+            this.CBoxMessy.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxMessy.Location = new System.Drawing.Point(6, 65);
+            this.CBoxMessy.Name = "CBoxMessy";
+            this.CBoxMessy.Size = new System.Drawing.Size(80, 17);
+            this.CBoxMessy.TabIndex = 6;
+            this.CBoxMessy.Text = "Messy Text";
+            this.CBoxMessy.UseVisualStyleBackColor = true;
             // 
-            // CBoxUpCaseChar
+            // CBoxNoise
             // 
-            this.CBoxUpCaseChar.AutoSize = true;
-            this.CBoxUpCaseChar.Checked = true;
-            this.CBoxUpCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxUpCaseChar.Location = new System.Drawing.Point(79, 62);
-            this.CBoxUpCaseChar.Name = "CBoxUpCaseChar";
-            this.CBoxUpCaseChar.Size = new System.Drawing.Size(107, 17);
-            this.CBoxUpCaseChar.TabIndex = 2;
-            this.CBoxUpCaseChar.Tag = "2";
-            this.CBoxUpCaseChar.Text = "Upper Case Char";
-            this.CBoxUpCaseChar.UseVisualStyleBackColor = true;
-            // 
-            // CBoxLowCaseChar
-            // 
-            this.CBoxLowCaseChar.AutoSize = true;
-            this.CBoxLowCaseChar.Checked = true;
-            this.CBoxLowCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxLowCaseChar.Location = new System.Drawing.Point(79, 39);
-            this.CBoxLowCaseChar.Name = "CBoxLowCaseChar";
-            this.CBoxLowCaseChar.Size = new System.Drawing.Size(107, 17);
-            this.CBoxLowCaseChar.TabIndex = 1;
-            this.CBoxLowCaseChar.Tag = "1";
-            this.CBoxLowCaseChar.Text = "Lower Case Char";
-            this.CBoxLowCaseChar.UseVisualStyleBackColor = true;
-            // 
-            // CBoxNumeric
-            // 
-            this.CBoxNumeric.AutoSize = true;
-            this.CBoxNumeric.Checked = true;
-            this.CBoxNumeric.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxNumeric.Location = new System.Drawing.Point(79, 16);
-            this.CBoxNumeric.Name = "CBoxNumeric";
-            this.CBoxNumeric.Size = new System.Drawing.Size(65, 17);
-            this.CBoxNumeric.TabIndex = 0;
-            this.CBoxNumeric.Tag = "0";
-            this.CBoxNumeric.Text = "Numeric";
-            this.CBoxNumeric.UseVisualStyleBackColor = true;
-            // 
-            // BtnAbout
-            // 
-            this.BtnAbout.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbout.Image")));
-            this.BtnAbout.Location = new System.Drawing.Point(581, 12);
-            this.BtnAbout.Name = "BtnAbout";
-            this.BtnAbout.Size = new System.Drawing.Size(34, 23);
-            this.BtnAbout.TabIndex = 10;
-            this.BtnAbout.UseVisualStyleBackColor = true;
-            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
-            // 
-            // RBtnNormCaptcha
-            // 
-            this.RBtnNormCaptcha.AutoSize = true;
-            this.RBtnNormCaptcha.Checked = true;
-            this.RBtnNormCaptcha.Location = new System.Drawing.Point(6, 19);
-            this.RBtnNormCaptcha.Name = "RBtnNormCaptcha";
-            this.RBtnNormCaptcha.Size = new System.Drawing.Size(101, 17);
-            this.RBtnNormCaptcha.TabIndex = 13;
-            this.RBtnNormCaptcha.TabStop = true;
-            this.RBtnNormCaptcha.Tag = "Normal";
-            this.RBtnNormCaptcha.Text = "Normal Captcha";
-            this.RBtnNormCaptcha.UseVisualStyleBackColor = true;
-            // 
-            // RBtnMathCaptcha
-            // 
-            this.RBtnMathCaptcha.AutoSize = true;
-            this.RBtnMathCaptcha.Location = new System.Drawing.Point(6, 153);
-            this.RBtnMathCaptcha.Name = "RBtnMathCaptcha";
-            this.RBtnMathCaptcha.Size = new System.Drawing.Size(92, 17);
-            this.RBtnMathCaptcha.TabIndex = 14;
-            this.RBtnMathCaptcha.Tag = "Math";
-            this.RBtnMathCaptcha.Text = "Math Captcha";
-            this.RBtnMathCaptcha.UseVisualStyleBackColor = true;
-            // 
-            // GBoxNorm
-            // 
-            this.GBoxNorm.Controls.Add(this.label3);
-            this.GBoxNorm.Controls.Add(this.CBoxNumeric);
-            this.GBoxNorm.Controls.Add(this.CBoxLowCaseChar);
-            this.GBoxNorm.Controls.Add(this.CBoxSymbol);
-            this.GBoxNorm.Controls.Add(this.NumTextLength);
-            this.GBoxNorm.Controls.Add(this.CBoxUpCaseChar);
-            this.GBoxNorm.Location = new System.Drawing.Point(6, 42);
-            this.GBoxNorm.Name = "GBoxNorm";
-            this.GBoxNorm.Size = new System.Drawing.Size(187, 105);
-            this.GBoxNorm.TabIndex = 11;
-            this.GBoxNorm.TabStop = false;
-            this.GBoxNorm.Text = "Normal Captcha Pref.";
+            this.CBoxNoise.AutoSize = true;
+            this.CBoxNoise.Checked = true;
+            this.CBoxNoise.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxNoise.Location = new System.Drawing.Point(6, 42);
+            this.CBoxNoise.Name = "CBoxNoise";
+            this.CBoxNoise.Size = new System.Drawing.Size(53, 17);
+            this.CBoxNoise.TabIndex = 3;
+            this.CBoxNoise.Text = "Noise";
+            this.CBoxNoise.UseVisualStyleBackColor = true;
             // 
             // GBoxMath
             // 
@@ -357,53 +284,140 @@
             this.CBoxMultp.Text = "Multiply ";
             this.CBoxMultp.UseVisualStyleBackColor = true;
             // 
-            // CBoxMessy
+            // GBoxNorm
             // 
-            this.CBoxMessy.AutoSize = true;
-            this.CBoxMessy.Checked = true;
-            this.CBoxMessy.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxMessy.Location = new System.Drawing.Point(6, 65);
-            this.CBoxMessy.Name = "CBoxMessy";
-            this.CBoxMessy.Size = new System.Drawing.Size(80, 17);
-            this.CBoxMessy.TabIndex = 6;
-            this.CBoxMessy.Text = "Messy Text";
-            this.CBoxMessy.UseVisualStyleBackColor = true;
+            this.GBoxNorm.Controls.Add(this.label3);
+            this.GBoxNorm.Controls.Add(this.CBoxNumeric);
+            this.GBoxNorm.Controls.Add(this.CBoxLowCaseChar);
+            this.GBoxNorm.Controls.Add(this.CBoxSymbol);
+            this.GBoxNorm.Controls.Add(this.NumTextLength);
+            this.GBoxNorm.Controls.Add(this.CBoxUpCaseChar);
+            this.GBoxNorm.Location = new System.Drawing.Point(6, 42);
+            this.GBoxNorm.Name = "GBoxNorm";
+            this.GBoxNorm.Size = new System.Drawing.Size(187, 105);
+            this.GBoxNorm.TabIndex = 11;
+            this.GBoxNorm.TabStop = false;
+            this.GBoxNorm.Text = "Normal Captcha Pref.";
             // 
-            // CBoxNoise
+            // label3
             // 
-            this.CBoxNoise.AutoSize = true;
-            this.CBoxNoise.Checked = true;
-            this.CBoxNoise.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxNoise.Location = new System.Drawing.Point(6, 42);
-            this.CBoxNoise.Name = "CBoxNoise";
-            this.CBoxNoise.Size = new System.Drawing.Size(53, 17);
-            this.CBoxNoise.TabIndex = 3;
-            this.CBoxNoise.Text = "Noise";
-            this.CBoxNoise.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Text length:";
             // 
-            // CBoxLine
+            // CBoxNumeric
             // 
-            this.CBoxLine.AutoSize = true;
-            this.CBoxLine.Checked = true;
-            this.CBoxLine.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxLine.Location = new System.Drawing.Point(6, 19);
-            this.CBoxLine.Name = "CBoxLine";
-            this.CBoxLine.Size = new System.Drawing.Size(46, 17);
-            this.CBoxLine.TabIndex = 4;
-            this.CBoxLine.Text = "Line";
-            this.CBoxLine.UseVisualStyleBackColor = true;
+            this.CBoxNumeric.AutoSize = true;
+            this.CBoxNumeric.Checked = true;
+            this.CBoxNumeric.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxNumeric.Location = new System.Drawing.Point(79, 16);
+            this.CBoxNumeric.Name = "CBoxNumeric";
+            this.CBoxNumeric.Size = new System.Drawing.Size(65, 17);
+            this.CBoxNumeric.TabIndex = 0;
+            this.CBoxNumeric.Tag = "0";
+            this.CBoxNumeric.Text = "Numeric";
+            this.CBoxNumeric.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // CBoxLowCaseChar
             // 
-            this.groupBox3.Controls.Add(this.CBoxLine);
-            this.groupBox3.Controls.Add(this.CBoxMessy);
-            this.groupBox3.Controls.Add(this.CBoxNoise);
-            this.groupBox3.Location = new System.Drawing.Point(199, 42);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(113, 200);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "General Pref.";
+            this.CBoxLowCaseChar.AutoSize = true;
+            this.CBoxLowCaseChar.Checked = true;
+            this.CBoxLowCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxLowCaseChar.Location = new System.Drawing.Point(79, 39);
+            this.CBoxLowCaseChar.Name = "CBoxLowCaseChar";
+            this.CBoxLowCaseChar.Size = new System.Drawing.Size(107, 17);
+            this.CBoxLowCaseChar.TabIndex = 1;
+            this.CBoxLowCaseChar.Tag = "1";
+            this.CBoxLowCaseChar.Text = "Lower Case Char";
+            this.CBoxLowCaseChar.UseVisualStyleBackColor = true;
+            // 
+            // CBoxSymbol
+            // 
+            this.CBoxSymbol.AutoSize = true;
+            this.CBoxSymbol.Checked = true;
+            this.CBoxSymbol.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxSymbol.Location = new System.Drawing.Point(79, 85);
+            this.CBoxSymbol.Name = "CBoxSymbol";
+            this.CBoxSymbol.Size = new System.Drawing.Size(60, 17);
+            this.CBoxSymbol.TabIndex = 5;
+            this.CBoxSymbol.Tag = "3";
+            this.CBoxSymbol.Text = "Symbol";
+            this.CBoxSymbol.UseVisualStyleBackColor = true;
+            // 
+            // NumTextLength
+            // 
+            this.NumTextLength.Location = new System.Drawing.Point(9, 32);
+            this.NumTextLength.Name = "NumTextLength";
+            this.NumTextLength.Size = new System.Drawing.Size(64, 20);
+            this.NumTextLength.TabIndex = 11;
+            this.NumTextLength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.NumTextLength.ValueChanged += new System.EventHandler(this.NumTextLength_ValueChanged);
+            // 
+            // CBoxUpCaseChar
+            // 
+            this.CBoxUpCaseChar.AutoSize = true;
+            this.CBoxUpCaseChar.Checked = true;
+            this.CBoxUpCaseChar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxUpCaseChar.Location = new System.Drawing.Point(79, 62);
+            this.CBoxUpCaseChar.Name = "CBoxUpCaseChar";
+            this.CBoxUpCaseChar.Size = new System.Drawing.Size(107, 17);
+            this.CBoxUpCaseChar.TabIndex = 2;
+            this.CBoxUpCaseChar.Tag = "2";
+            this.CBoxUpCaseChar.Text = "Upper Case Char";
+            this.CBoxUpCaseChar.UseVisualStyleBackColor = true;
+            // 
+            // RBtnMathCaptcha
+            // 
+            this.RBtnMathCaptcha.AutoSize = true;
+            this.RBtnMathCaptcha.Location = new System.Drawing.Point(6, 153);
+            this.RBtnMathCaptcha.Name = "RBtnMathCaptcha";
+            this.RBtnMathCaptcha.Size = new System.Drawing.Size(92, 17);
+            this.RBtnMathCaptcha.TabIndex = 14;
+            this.RBtnMathCaptcha.Tag = "Math";
+            this.RBtnMathCaptcha.Text = "Math Captcha";
+            this.RBtnMathCaptcha.UseVisualStyleBackColor = true;
+            // 
+            // RBtnNormCaptcha
+            // 
+            this.RBtnNormCaptcha.AutoSize = true;
+            this.RBtnNormCaptcha.Checked = true;
+            this.RBtnNormCaptcha.Location = new System.Drawing.Point(6, 19);
+            this.RBtnNormCaptcha.Name = "RBtnNormCaptcha";
+            this.RBtnNormCaptcha.Size = new System.Drawing.Size(101, 17);
+            this.RBtnNormCaptcha.TabIndex = 13;
+            this.RBtnNormCaptcha.TabStop = true;
+            this.RBtnNormCaptcha.Tag = "Normal";
+            this.RBtnNormCaptcha.Text = "Normal Captcha";
+            this.RBtnNormCaptcha.UseVisualStyleBackColor = true;
+            // 
+            // BtnAbout
+            // 
+            this.BtnAbout.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbout.Image")));
+            this.BtnAbout.Location = new System.Drawing.Point(581, 12);
+            this.BtnAbout.Name = "BtnAbout";
+            this.BtnAbout.Size = new System.Drawing.Size(34, 23);
+            this.BtnAbout.TabIndex = 10;
+            this.BtnAbout.UseVisualStyleBackColor = true;
+            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
+            // 
+            // CBoxDistImg
+            // 
+            this.CBoxDistImg.AutoSize = true;
+            this.CBoxDistImg.Checked = true;
+            this.CBoxDistImg.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxDistImg.Location = new System.Drawing.Point(6, 88);
+            this.CBoxDistImg.Name = "CBoxDistImg";
+            this.CBoxDistImg.Size = new System.Drawing.Size(88, 17);
+            this.CBoxDistImg.TabIndex = 7;
+            this.CBoxDistImg.Text = "Distort Image";
+            this.CBoxDistImg.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -429,13 +443,13 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.GroupBoxPref.ResumeLayout(false);
             this.GroupBoxPref.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).EndInit();
-            this.GBoxNorm.ResumeLayout(false);
-            this.GBoxNorm.PerformLayout();
-            this.GBoxMath.ResumeLayout(false);
-            this.GBoxMath.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.GBoxMath.ResumeLayout(false);
+            this.GBoxMath.PerformLayout();
+            this.GBoxNorm.ResumeLayout(false);
+            this.GBoxNorm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumTextLength)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +486,7 @@
         private System.Windows.Forms.CheckBox CBoxNoise;
         private System.Windows.Forms.CheckBox CBoxMessy;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.CheckBox CBoxDistImg;
     }
 }
 

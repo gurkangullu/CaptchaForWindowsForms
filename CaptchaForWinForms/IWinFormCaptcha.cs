@@ -26,6 +26,7 @@ namespace CaptchaForWinForms
         bool IsIncludeLineOnCaptcha { get; set; } 
         bool IsIncludeNoiseOnCaptcha { get; set; }
         bool IsMessyText { get; set; }
+        bool IsDistortImage { get; set; }
 
         WinFormCaptcha.CaptchaStyles CaptchaStyle { get; set; }
         #endregion
@@ -38,11 +39,11 @@ namespace CaptchaForWinForms
         void ChangeNormCaptchaSettings(bool _isIncludeNumeric, bool _isIncludeLowerCaseChar,
             bool _isIncludeUpperCaseChar, bool _isIncludeSymbol,
             bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha,
-            bool _isMessyText);
+            bool _isMessyText, bool _isDistortImage);
         void ChangeMathCaptchaSettings(bool _isIncludeMathAddition, bool _isIncludeMathSubstract,
             bool _isIncludeMathMultiply, bool _isIncludeMathDivide,
             bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha,
-            bool _isMessyText);
+            bool _isMessyText, bool _isDistortImage);
         void Dispose();
         #endregion
     }
