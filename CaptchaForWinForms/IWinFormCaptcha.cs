@@ -11,10 +11,10 @@ namespace CaptchaForWinForms
         int Width { get; set; }
 
         //Normal captcha's properties.
-       bool IsIncludeNumeric { get; set; }
-       bool IsIncludeLowerCaseChar { get; set; }
-       bool IsIncludeUpperCaseChar { get; set; }
-       bool IsIncludeSymbol { get; set; }
+        bool IsIncludeNumeric { get; set; }
+        bool IsIncludeLowerCaseChar { get; set; }
+        bool IsIncludeUpperCaseChar { get; set; }
+        bool IsIncludeSymbol { get; set; }
 
         //Math captcha's properties.
         bool IsIncludeMathAddition { get; set; }
@@ -23,7 +23,7 @@ namespace CaptchaForWinForms
         bool IsIncludeMathDivide { get; set; }
 
         //General captcha's properties.
-        bool IsIncludeLineOnCaptcha { get; set; } 
+        bool IsIncludeLineOnCaptcha { get; set; }
         bool IsIncludeNoiseOnCaptcha { get; set; }
         bool IsMessyText { get; set; }
         bool IsDistortImage { get; set; }
@@ -33,17 +33,17 @@ namespace CaptchaForWinForms
 
         #region IMethods
         Bitmap DrawCaptcha();
-        bool CheckCorrect(string _checkText);
+        bool CheckCorrect(string checkText);
         void ListenCaptcha();
         void SaveCaptcha(string savePath, ImageFormat imgFrm);
-        void ChangeNormCaptchaSettings(bool _isIncludeNumeric, bool _isIncludeLowerCaseChar,
-            bool _isIncludeUpperCaseChar, bool _isIncludeSymbol,
-            bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha,
-            bool _isMessyText, bool _isDistortImage);
-        void ChangeMathCaptchaSettings(bool _isIncludeMathAddition, bool _isIncludeMathSubstract,
-            bool _isIncludeMathMultiply, bool _isIncludeMathDivide,
-            bool _isIncludeLineOnCaptcha, bool _isIncludeNoiseOnCaptcha,
-            bool _isMessyText, bool _isDistortImage);
+        void ChangeNormCaptchaSettings(bool isIncludeNumeric, bool isIncludeLowerCaseChar,
+            bool isIncludeUpperCaseChar, bool isIncludeSymbol,
+            bool isIncludeLineOnCaptcha, bool isIncludeNoiseOnCaptcha,
+            bool isMessyText, bool isDistortImage);
+        void ChangeMathCaptchaSettings(bool isIncludeMathAddition, bool isIncludeMathSubstract,
+            bool isIncludeMathMultiply, bool isIncludeMathDivide,
+            bool isIncludeLineOnCaptcha, bool isIncludeNoiseOnCaptcha,
+            bool isMessyText, bool isDistortImage);
         void Dispose();
         #endregion
     }

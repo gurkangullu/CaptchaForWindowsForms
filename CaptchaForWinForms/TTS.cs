@@ -28,11 +28,11 @@ namespace CaptchaForWinForms
         /// <summary>
         /// Constructor of the TTS class.
         /// </summary>
-        /// <param name="_voiceRate">This is value of the TTS rate attribute.</param>
-        public TTS(int _voiceRate)
+        /// <param name="voiceRate">This is value of the TTS rate attribute.</param>
+        public TTS(int voiceRate)
         {
             speaker = new SpeechSynthesizer();
-            speaker.Rate = _voiceRate;
+            speaker.Rate = voiceRate;
         }
         #endregion
 

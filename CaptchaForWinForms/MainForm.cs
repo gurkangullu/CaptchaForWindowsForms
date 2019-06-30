@@ -51,11 +51,12 @@ namespace CaptchaForWinForms
             /*New instance was created from WinFormCaptcha and
              * was set necessary parameters.*/
             cp = new WinFormCaptcha(int.Parse(NumTextLength.Value.ToString()),
-                PanelCaptcha.Width, PanelCaptcha.Height,
-                true, true, true, true, true, true, true, true);
+                PanelCaptcha.Width, PanelCaptcha.Height);
 
             //Captcha image was created and was set as background image of the panel's.
             PanelCaptcha.BackgroundImage = cp.DrawCaptcha();
+            PictureBox v = new PictureBox();
+            v.Image = cp.DrawCaptcha();
         }
 
         /// <summary>
