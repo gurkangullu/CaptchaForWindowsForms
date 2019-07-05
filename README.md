@@ -88,4 +88,4 @@ You can review the codes and example project for more information. :blush:
 ## License:
 This project is licensed under the MIT License. See the [LICENSE](../master/LICENSE) file for details.
 
-Created by Gürkan Güllü
+Created by Gürkan Güllü.
