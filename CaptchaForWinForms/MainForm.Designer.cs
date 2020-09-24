@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.GroupBoxPref = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CBoxDistImg = new System.Windows.Forms.CheckBox();
             this.CBoxLine = new System.Windows.Forms.CheckBox();
             this.CBoxMessy = new System.Windows.Forms.CheckBox();
             this.CBoxNoise = new System.Windows.Forms.CheckBox();
@@ -57,8 +58,6 @@
             this.CBoxUpCaseChar = new System.Windows.Forms.CheckBox();
             this.RBtnMathCaptcha = new System.Windows.Forms.RadioButton();
             this.RBtnNormCaptcha = new System.Windows.Forms.RadioButton();
-            this.BtnAbout = new System.Windows.Forms.Button();
-            this.CBoxDistImg = new System.Windows.Forms.CheckBox();
             this.GroupBoxPref.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.GBoxMath.SuspendLayout();
@@ -182,6 +181,18 @@
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "General Pref.";
+            // 
+            // CBoxDistImg
+            // 
+            this.CBoxDistImg.AutoSize = true;
+            this.CBoxDistImg.Checked = true;
+            this.CBoxDistImg.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBoxDistImg.Location = new System.Drawing.Point(6, 88);
+            this.CBoxDistImg.Name = "CBoxDistImg";
+            this.CBoxDistImg.Size = new System.Drawing.Size(88, 17);
+            this.CBoxDistImg.TabIndex = 7;
+            this.CBoxDistImg.Text = "Distort Image";
+            this.CBoxDistImg.UseVisualStyleBackColor = true;
             // 
             // CBoxLine
             // 
@@ -397,34 +408,11 @@
             this.RBtnNormCaptcha.Text = "Normal Captcha";
             this.RBtnNormCaptcha.UseVisualStyleBackColor = true;
             // 
-            // BtnAbout
-            // 
-            this.BtnAbout.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbout.Image")));
-            this.BtnAbout.Location = new System.Drawing.Point(581, 12);
-            this.BtnAbout.Name = "BtnAbout";
-            this.BtnAbout.Size = new System.Drawing.Size(34, 23);
-            this.BtnAbout.TabIndex = 10;
-            this.BtnAbout.UseVisualStyleBackColor = true;
-            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
-            // 
-            // CBoxDistImg
-            // 
-            this.CBoxDistImg.AutoSize = true;
-            this.CBoxDistImg.Checked = true;
-            this.CBoxDistImg.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CBoxDistImg.Location = new System.Drawing.Point(6, 88);
-            this.CBoxDistImg.Name = "CBoxDistImg";
-            this.CBoxDistImg.Size = new System.Drawing.Size(88, 17);
-            this.CBoxDistImg.TabIndex = 7;
-            this.CBoxDistImg.Text = "Distort Image";
-            this.CBoxDistImg.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 265);
-            this.Controls.Add(this.BtnAbout);
+            this.ClientSize = new System.Drawing.Size(587, 265);
             this.Controls.Add(this.GroupBoxPref);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnSave);
@@ -471,7 +459,6 @@
         private System.Windows.Forms.CheckBox CBoxLowCaseChar;
         private System.Windows.Forms.CheckBox CBoxNumeric;
         private System.Windows.Forms.CheckBox CBoxSymbol;
-        private System.Windows.Forms.Button BtnAbout;
         private System.Windows.Forms.NumericUpDown NumTextLength;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox GBoxMath;

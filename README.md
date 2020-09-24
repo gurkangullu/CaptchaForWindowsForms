@@ -3,8 +3,6 @@
 ## Description:
 This program allows you to use and customize Captcha protection for your desktop applications.
 
-If you want to use this program in your own project, you can download the dll file included in the project, add it to your project and use all the features. :blush:
-
 Please don't forget to share your requests and suggestions with me. :heart:
 
 ## Features:
@@ -84,8 +82,3 @@ You can review the codes and example project for more information. :blush:
 
 ## Screenshot(s): 
 <kbd>![Screenshot_1](https://github.com/gurkangullu/Captcha-For-Windows-Forms/blob/master/CaptchaForWinForms/Screenshots/HowUseCaptchaForWinForms.gif)</kbd>
-
-## License:
-This project is licensed under the MIT License. See the [LICENSE](../master/LICENSE) file for details.
-
-Created by Gürkan Güllü.

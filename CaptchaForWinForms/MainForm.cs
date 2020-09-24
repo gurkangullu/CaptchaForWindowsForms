@@ -177,18 +177,5 @@ namespace CaptchaForWinForms
                     CBoxNoise.Checked, CBoxMessy.Checked, CBoxDistImg.Checked);
             }
         }
-
-        /// <summary>
-        /// This method is open about form.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnAbout_Click(object sender, EventArgs e)
-        {
-            using (AboutForm aboutFrm = new AboutForm())
-            {
-                aboutFrm.ShowDialog();
-            }
-        }
     }
 }
