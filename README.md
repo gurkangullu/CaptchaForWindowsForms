@@ -1,4 +1,4 @@
-# Captcha For Windows Forms
+# Captcha For WinForms
 
 ## Description:
 This program allows you to use and customize Captcha protection for your desktop applications.
